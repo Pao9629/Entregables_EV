@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+:root {
+    --azul: #216288;
+    --pistacho: #b9d553;
+    --verde: #e5ffd4;
+    --negro: var(--negro);
+    --blanco:var(--blanco)
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fuente principal: Open Sans */
+    font-size: 20px; /* Tamaño de fuente */
+}
+
+/* Eliminamos los margenes y el relleno blanco predeterminado */
+* { 
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+/* Cambiamos el color de fondo del encabezado */
+.Cabecero {
+        background-color: #216288;
+        display: flex;
+        width: auto;
+        height: 220px; /* Cambia este valor según tus necesidades */
+        align-items: start;
+}
+
+.imagen-logo1 {
+    position: relative;
+    left: 250px; /* Ajusta este valor para mover la imagen a la derecha */
+    width: 190px; /* Ajusta este valor para cambiar el tamaño de la imagen */
+    margin-top: 10px;
+    size-adjust: 50%;
+    height: 170px; /* Esto mantiene las proporciones de la imagen */
+}
+
+.Titulo-encabezado {
+    position: relative;
+    left: 500px;
+    top: 20%;
+    color: white;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    white-space: nowrap;
+    letter-spacing: -1px;
+    
+}
+
+.ubicacion {
+    display: block;
+    position: relative;
+    color: var(--negro);
+    top: 50%;
+    left: 305px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+
+.Iconos-cabecero {
+    display: block;
+    position: relative;
+    color: var(--negro);
+    top: 65%;
+    left: 250px;
+    
+}
+
+/* Estilos para los iconos de redes sociales */
+/* Estilos para los iconos de redes sociales */
+.Cabecero .Iconos-cabecero a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto de crecimiento al pasar el ratón por encima */
+.Cabecero .Iconos-cabecero a:hover {
+    transform: scale(1.2);
+}
+
+/* Estilos para el menú de navegación */
+.Menu-navegacion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pistacho); /* Fondo de color verde */
+}
+
+/* Estilos para los elementos de la lista */
+.Menu-navegacion ul li {
+    display: inline;
+    margin: 0 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: var(--negro);
+    font-size: 20px;
+    font-weight: bold;
+    font-weight: 550;
+}
+
+/* 3 horas ya, borrar comentarios innecesarios en la revisión*/ 
+
+/* Aquí van los estilos para los enlaces */
+.Menu-navegacion ul li a {
+    text-decoration: none;
+    color: black; /* Color de texto por defecto */
+    transition: color 0.3s ease; /* Transición del color al pasar el ratón */
+    display: inline-block; /* Ajusta el tamaño del enlace al texto */
+    padding: 22px; /* Ajusta el espacio alrededor del texto */
+    border-radius: 0; /* Añade esquinas redondeadas para un aspecto más suave */
+    text-decoration:underline ;
+}
+
+/* Ahora ponemos efecto de hover en los enlaces */
+.Menu-navegacion ul li a:hover {
+    background-color: black; /* Cambio de color al pasar el ratón */
+    text-decoration:underline ;
+    color: white; /* Cambio de color al pasar el ratón */
+}
+
+/* Y ahora el estilo para el enlace activo o seleccionado */
+.Menu-navegacion ul li a.active {
+    background-color: black; /* Fondo negro para el enlace seleccionado */
+    text-decoration:underline ;
+    color: white; /* Texto blanco para el enlace seleccionado */
+}
+
+/* Estilos para el artículo */
+.Articulo1 {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto; /* Centra el artículo horizontalmente */
+}
+
+.Titulo-central {
+    color: var(--negro);
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 3%;
+
+}
+
+.Contenedor-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Establece el ancho máximo */
+    margin-top: 20px; /* Ajusta el margen superior */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Estilos para el párrafo de texto */
+.Lorem1 {
+    flex: 1; /* Ocupa parte del espacio disponible */
+    margin: 10px; /* Ajusta el margen */
+    text-align: justify;
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 80; /* Controla el grosor de la fuente */
+    
+}
+
+/* Estilos para el video mp4 (probar en otros nav) */
+.video {
+    flex: 1; /* Ocupa parte del espacio disponible */
+    margin: 10px; /* Ajusta el margen */
+    max-width: 50%; /* Limita el ancho máximo del video al 50% del contenedor */
+}
+
+/* 185 líneas y todavía voy por la mitad */ 
+/* Recordatorio de borrar estas líneas de comentarios en la revisión */
+
+
+/* Estilos para la sección Articulo2 */
+.Articulo2 {
+    display: flex;
+    justify-content: center; /* Espacio entre los elementos dentro de la sección */
+    background-color: var(--verde); /* Fondo verde claro */
+    padding: 50px; /* Espaciado interno */
+    height: 95%;
+    width: 100%;
+    
+}
+
+/* Estilos para el Contenedor-Ubicacion y Contenedor-Fechas */
+
+.Contenedor-Ubicacion, .Contenedor-Fechas {
+    display: inline-block;
+    text-align: justify;
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 80; /* Controla el grosor de la fuente */
+    margin-left: 50px; /* Espaciado izquierdo */
+    margin-right: 80px; /* Espaciado derecho */
+    line-height:1.8;
+
+}
+
+.Titulo-Ubicacion , .Titulo-Fechas {
+    font-size: 20px; /* Tamaño del texto más grande */
+    margin-bottom: 10px; /* Espaciado inferior */
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    
+}
+
+.Titulo-Ubicacion::after , .Titulo-Fechas::after {
+    content: "";
+    display: block;
+    border-bottom: 5px dotted #b9d553; /* Ajusta el color y el tamaño según tus necesidades */
+    margin: 10px 0; /* Ajusta el espaciado según tus necesidades */
+}
+
+
+.Eventos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Tamaño del texto más grande */
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    max-width: 800px; /* Establece el ancho máximo */
+    margin-top: 20px; /* Ajusta el margen superior */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dock-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto;
+}
+
+.imagen-con-texto {
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 calc(33.33% - 20px); /* Ancho del 33.33% para cada imagen con un margen */
+    max-width: calc(33.33% - 20px); /* Ancho máximo para cada imagen con un margen */
+    box-sizing: border-box;
+}
+
+.dock-imagenes img {
+    width: calc(33.33% - 20px); /* Establecer el ancho de cada imagen con un margen */
+    max-width: 100%; /* Hacer que las imágenes se ajusten al contenedor */
+    height: auto;
+    box-sizing: border-box;
+    margin: 10px; /* Agregar un margen entre las imágenes */
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+    aspect-ratio: 16/9; /* Establecer la relación de aspecto deseada (16:9 en este caso) */
+}
+
+.imagen-con-texto img {
+    display: block;
+    width: 100%; /* Ajusta el ancho de las imágenes al 100% del contenedor */
+    height: auto;
+    object-fit: cover; /* Ajustar la imagen para que cubra todo el contenedor */
+}
+
+.imagen-con-texto p {
+    margin-top: 5px;
+    color: black;
+    font-size: 16px;
+}
+
+.Pie-pagina {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    font-size: smaller;
+    font-weight: 100;
+    font-weight: lighter;
+    text-align: left
+    
+}
+
+
+
+
+
+
+
+
+

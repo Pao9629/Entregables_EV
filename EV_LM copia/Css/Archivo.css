@@ -1,0 +1,20 @@
+:root {
+    --azul: #216288;
+    --pistacho: #b8d414;
+    --verde: #e5ffd4;
+    --negro: var(--negro);
+    --blanco:var(--blanco)
+
+}
+
+/* Cambiar el color de fondo del encabezado */
+.Cabecero {
+    background-color: var(--azul); /* Utilizando la variable definida en :root */
+}
+
+/* Cambiar el color del texto del título */
+.Titulo-encabezado {
+    color: var(--blanco); /* Establece el color del texto */
+}
+
+    
