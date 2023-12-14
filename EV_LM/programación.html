@@ -55,7 +55,7 @@
 <main>
     <section class="tablaPrograma">
 
-        <h2>Programa de las II Jornadas Informáticas</h2>
+        <h2 class="titulo-tabla">Programa de las II Jornadas Informáticas</h2>
         
 
         <!-- Aquí comienza la tabla -->
@@ -66,7 +66,7 @@
             <th colspan="5">Todos los talleres de las jornadas</th>
           </tr>
         </thead>
-              <tr>
+              <tr class="subcabeceraTabla">
                   <th>Fecha</th>
                   <th>Taller</th>
                   <th>Ponente</th>
@@ -74,58 +74,120 @@
                   <th>Ubicación</th>
               </tr>
               <tr>
-                  <td rowspan="4">3 de febrero</td>
-                  <td>Computación Cuántica: La próxima revolución de la Informática</td>
-                  <td>Javier García</td>
-                  <td>9 a 12 h</td>
-                  <td>Aulario I</td>
+                <td class="fechaEspecial" rowspan="4">3 de febrero</td>
+                <td>Computación Cuántica: La próxima revolución de la Informática</td>
+                <td>Javier García</td>
+                <td>
+                  <!-- Icono SVG -->
+                  <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                    <!-- Código del icono SVG proporcionado -->
+                    <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                  </svg>9 a 12 h </td>
+                <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                  <!-- El código del icono SVG que proporcionaste -->
+                  <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                </svg>Aulario I</td>
               </tr>
+              
               <tr>
                   <td>Animación 3D en la Industria del Videojuego</td>
                   <td>Diana Bautista</td>
-                  <td>12 a 14 h</td>
-                  <td>Aulario I</td>
+                  <td>
+                    <!-- Icono SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!-- Código del icono SVG proporcionado -->
+                      <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>12 a 14 h</td>
+                  <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- El código del icono SVG que proporcionaste -->
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                  </svg>Aulario I</td>
               </tr>
               <tr>
                   <td>Taller sobre análisis de dispositivos móviles</td>
                   <td>Carlos Manrique</td>
-                  <td>16 a 18 h</td>
-                  <td>Aulario II</td>
+                  <td>
+                    <!-- Icono SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!-- Código del icono SVG proporcionado -->
+                      <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>16 a 18 h</td>
+                  <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- El código del icono SVG que proporcionaste -->
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                  </svg>Aulario II</td>
               </tr>
               <tr>
                   <td>Metodologías ágiles y transformación digital</td>
                   <td>Alfredo Oltra</td>
-                  <td>18 a 20 h</td>
-                  <td>Aulario II</td>
+                  <td>
+                    <!-- Icono SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!-- Código del icono SVG proporcionado -->
+                      <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>18 a 20 h</td>
+                  <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- El código del icono SVG que proporcionaste -->
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                  </svg>Aulario II</td>
               </tr>
               <tr>
-                  <td rowspan="3">12 de Marzo</td>
+                  <td class="fechaEspecial" rowspan="3">12 de Marzo</td>
                   <td>Realidad virtual y aumentada: experiencias asequibles y útiles en educación</td>
                   <td>Óscar Sapena</td>
-                  <td>10 a 12 h</td>
-                  <td>Aulario I</td>
+                  <td>
+                    <!-- Icono SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!-- Código del icono SVG proporcionado -->
+                      <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>10 a 12 h</td>
+                  <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- El código del icono SVG que proporcionaste -->
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                  </svg>Aulario I</td>
               </tr>
               <tr>
                   <td>La predicción del tiempo</td>
                   <td>Nuria Medina</td>
-                  <td>12 a 14 h</td>
-                  <td>Aulario I</td>
+                  <td>
+                    <!-- Icono SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!-- Código del icono SVG proporcionado -->
+                      <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>12 a 14 h</td>
+                  <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- El código del icono SVG que proporcionaste -->
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                  </svg>Aulario I</td>
               </tr>
               <tr>
                   <td>Firt Lego League</td>
                   <td>Pedro Sosa</td>
-                  <td>16 a 18 h</td>
-                  <td>Aulario II</td>
+                  <td>
+                    <!-- Icono SVG -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512">
+                      <!-- Código del icono SVG proporcionado -->
+                      <path d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/>
+                    </svg>16 a 18 h</td>
+                  <td> <svg xmlns="http://www.w3.org/2000/svg" height="16" width="12" viewBox="0 0 384 512">
+                    <!-- El código del icono SVG que proporcionaste -->
+                    <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"/>
+                  </svg>Aulario II</td>
               </tr>
               <tr>
                 
               </tr>
           </table>
-          <p>La entrada a las actividades es libre con <a href="inscripción.html">inscripción</a> previa </p>
+          <p class="enlace-programa">La entrada a las actividades es libre con <a class="inscripción-enlace" href="inscripción.html">inscripción</a> previa </p>
 </section>
 
+
+
 <section class="Apartado-Programa">
-    <div class="Fechas-Programa1">
+
+    <div> <h2 class="Titulo-Programa">Programación</h2> </div>   <div class="Fechas-Programa1"></div>
+
+
       <h3>3 de Febrero de 2024</h3>
       <ol class="horas">
         <li class="hora"><span class="negrita">9 h</span>, recepción de los participantes</li>
