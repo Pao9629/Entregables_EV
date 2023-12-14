@@ -75,13 +75,14 @@ body {
 }
 
 /* Estilos para los iconos de redes sociales */
+/* horas ya */
 /* Estilos para los iconos de redes sociales */
 .Cabecero .Iconos-cabecero a {
     display: inline-block;
     transition: transform 0.3s ease;
 }
 
-/* Efecto de crecimiento al pasar el ratón por encima */
+/* Efecto de crecimiento al pasar el raton de las narices por encima */
 .Cabecero .Iconos-cabecero a:hover {
     transform: scale(1.2);
 }
@@ -290,38 +291,81 @@ body {
 }
 
 
-/* CSS PARA PAGINA DE PROGRAMACIÓN */
-
- {
-    margin: 20px;
-  }
-
-  table {
-    width: 100%;
+/* CSS PARA PROGRAMACIÓN.html Section - tABLA */
+/* Estilos para la tabla */
+.tablaPrograma table {
+    width: 60%; /* Ajustar el ancho de la tabla según necesites */
     border-collapse: collapse;
-    border: 2px solid #333;
-    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: auto; /* Centrar la tabla horizontalmente */
+    font-size: 12px; /* Reducir el tamaño de la fuente */
   }
-
-  th, td {
-    border: 1px solid #333;
-    padding: 10px;
+  
+  .tablaPrograma th, .tablaPrograma td {
+    padding: 10px 5px; /* Espaciado vertical y horizontal en las celdas */
     text-align: center;
   }
-
-  th {
+  
+  .tablaPrograma th {
     background-color: #f2f2f2;
-    font-weight: bold;
   }
-
-  td {
-    background-color: #fff;
+  
+  /* Estilos para la cabecera */
+  .tablaPrograma .cabeceraTabla th {
+    background-color: var(--pistacho); /* Ajustar el color de la cabecera */
   }
-
-  tr:nth-child(even) td {
+  
+  /* Estilos para filas impares */
+  .tablaPrograma tr:nth-child(odd) {
     background-color: #f9f9f9;
   }
+  
+  /* Estilos para el enlace de inscripción */
+  .tablaPrograma p a {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .tablaPrograma p a:hover {
+    color: darkblue;
+  }
+  
+  
+  
 
 
 
 
+/* CSS PARA LA PARTE DE APARTADO-PROGRAMA */
+
+
+/* Estilos para la sección */
+/* Estilos para la sección */
+/* Estilos para la sección */
+.Apartado-Programa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px; /* Establece el ancho máximo */
+    margin-top: 20px; /* Ajusta el margen superior */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Estilos para cada cuadrado de fecha */
+  
+  .Fechas-Programa1 div {
+    flex: 1; /* Ocupa parte del espacio disponible */
+    margin: 10px; /* Ajusta el margen */
+    text-align: justify;
+    font-size: 20px; /* Ajusta el tamaño de fuente */
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 80; /* Controla el grosor de la fuente */
+  }
+  
+  .Fechas-Programa2 div {
+    flex: 1; /* Ocupa parte del espacio disponible */
+    margin: 10px; /* Ajusta el margen */
+    max-width: 50%; /* Limita el ancho máximo del video al 50% del contenedor */
+  }
+  
