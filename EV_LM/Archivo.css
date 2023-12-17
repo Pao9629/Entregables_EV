@@ -460,8 +460,6 @@ body {
   display: inline;
   position: relative;
 }
-=======
->>>>>>> d1b54a5db4565fc9dd56b34df33778fd2ea2748a
 
 .Contenedor-Dias1 h3 span, .Contenedor-Dias2 h3 span {
   background-color: palegreen;
@@ -469,60 +467,7 @@ body {
   -webkit-box-decoration-break: clone; /* Para navegadores WebKit */
 }
 
-<<<<<<< HEAD
 /* CSS para la inscripción*/
-=======
-  /* Estilos para el enlace de inscripción */
-  .tablaPrograma p a {
-    color: blue;
-    text-decoration: underline;
-  }
-  
-  .tablaPrograma p a:hover {
-    color: darkblue;
-  }
-
-/* Estilos para las celdas de la tabla */
-.tablaPrograma td {
-    position: relative; /* Posición relativa para que se superponga el subrayado */
-  }
-  
-  /* Efecto de subrayado al pasar el ratón sobre todas las filas de la tabla */
-  .tablaPrograma tr:hover td {
-    border-bottom: 2px solid transparent; /* Oculta el borde inferior predeterminado */
-  }
-  
-  /* Efecto de subrayado al pasar el ratón sobre todas las filas de la tabla */
-  .tablaPrograma tr:hover td::after {
-    content: '';
-    position: absolute;
-    bottom: -2px; /* Ubicación del subrayado */
-    left: 0;
-    width: 100%;
-    height: 2px; /* Grosor del subrayado */
-    background-color: black; /* Color del subrayado */
-  }
-  
-   
-  
-  
-  .enlace-programa {
-    font-size: 16px;
-    margin: 10px auto; /* Reducir los márgenes superior e inferior */
-    font-weight: bold;
-    text-align: center;
-    color: rgb(0, 0, 0);
-  }
-  
-  .inscripción-enlace {
-    text-decoration: underline;
-    text-decoration: none;
-    font-size: smaller;
-    font-style: none;
-    font-weight: initial;
-  }
-  
->>>>>>> d1b54a5db4565fc9dd56b34df33778fd2ea2748a
 
 .inscripcion{
     padding: 20px 0px;
@@ -550,7 +495,6 @@ legend{
     
 }
 
-<<<<<<< HEAD
 .ins_taller{
     list-style: none;
     display: inline-flex;
@@ -602,20 +546,13 @@ button:hover{
     background-color:black;
     color: white;
 }
-=======
-/* CSS PARA LA PARTE DE APARTADO-PROGRAMA */
->>>>>>> d1b54a5db4565fc9dd56b34df33778fd2ea2748a
 
 input:invalid,
 textarea:invalid {
     box-shadow: 0 0 5px 2px rgba(249, 35, 35, 0.5); /* Sombra difuminada */
 }
 
-<<<<<<< HEAD
 input:valid,
 textarea:valid {
     box-shadow: 0 0 5px 2px rgb(207, 255, 134); /* Sombra difuminada */
 }
-=======
-  
->>>>>>> d1b54a5db4565fc9dd56b34df33778fd2ea2748a
