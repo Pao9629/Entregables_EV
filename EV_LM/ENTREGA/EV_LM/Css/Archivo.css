@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+
+
+:root {
+    --azul: #216288;
+    --pistacho: #b9d553;
+    --verde: #e5ffd4;
+    --negro: #000000; 
+    --blanco: #FFFFFF; 
+}
+
+/*  PRIMERA PÁGINA INDEX.HTML - ENCABEZADO, CUERPO Y FOOTER */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Cabecero {
+  background-color: #216288;
+  display: flex;
+  width: auto;
+  height: 220px;
+  align-items: start;
+}
+
+.imagen-logo1 {
+  float: left;
+  margin-left: 150px;
+  width: 190px;
+  margin-top: 10px;
+  height: 170px;
+}
+
+.Titulo-encabezado {
+  position: relative;
+  left: 500px;
+  top: 20%;
+  color: white;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  white-space: nowrap;
+  letter-spacing: -1px;
+}
+
+.ubicacion {
+  display: block;
+  position: relative;
+  color: var(--negro);
+  top: 50%;
+  left: 305px;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.Iconos-cabecero {
+  display: block;
+  position: relative;
+  color: var(--negro);
+  top: 65%;
+  left: 250px;
+}
+
+.Cabecero .Iconos-cabecero a {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.Cabecero .Iconos-cabecero a:hover {
+  transform: scale(1.2);
+}
+
+.Menu-navegacion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--pistacho);
+}
+
+.Menu-navegacion ul li {
+  display: inline;
+  margin: 0 10px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  font-weight: 550;
+}
+
+.Menu-navegacion ul li a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+  display: inline-block;
+  padding: 22px;
+  border-radius: 0;
+  text-decoration: underline;
+}
+
+.Menu-navegacion ul li a:hover {
+  background-color: black;
+  text-decoration: underline;
+  color: white;
+}
+
+.Menu-navegacion ul li a.active {
+  background-color: black;
+  text-decoration: underline;
+  color: white;
+}
+
+.Articulo1 {
+  float: left; /* Aplico float al contentenedor del texto y del video*/
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.Titulo-central {
+  color: var(--negro);
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 3%;
+}
+
+.Contenedor-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Lorem1 {
+  flex: 1;
+  margin: 10px;
+  text-align: justify;
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 80;
+}
+
+.video {
+  flex: 1;
+  margin: 10px;
+  max-width: 50%;
+}
+
+.Articulo2 {
+  display: flex;
+  justify-content: center;
+  background-color: var(--verde);
+  padding: 50px;
+  height: 95%;
+  width: 100%;
+}
+
+.Contenedor-Ubicacion,
+.Contenedor-Fechas {
+  display: inline-block;
+  text-align: justify;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 80;
+  margin-left: 50px;
+  margin-right: 80px;
+  line-height: 1.8;
+}
+
+.Titulo-Ubicacion,
+.Titulo-Fechas {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: bold;
+}
+
+.Titulo-Ubicacion::after,
+.Titulo-Fechas::after {
+  content: "";
+  display: block;
+  border-bottom: 5px dotted #b9d553;
+  margin: 10px 0;
+}
+
+
+.Eventos {
+  display: flex;
+  justify-content: center;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 20px;
+  align-items: center;
+  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.dock-imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.imagen-con-texto {
+  text-align: center;
+  margin: 10px;
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+  box-sizing: border-box;
+}
+
+.dock-imagenes img {
+  width: calc(33.33% - 20px);
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  margin: 10px;
+  object-fit: cover;
+  aspect-ratio: 16/9;
+}
+
+.imagen-con-texto img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.imagen-con-texto p {
+  margin-top: 5px;
+  color: black;
+  font-size: 16px;
+}
+
+/* Footer aplicado a las 3 páginas */
+
+.Pie-pagina {
+  background-color: black;
+  color: white;
+  padding: 70px;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: left;
+  height: 250px; 
+  box-sizing: border-box; 
+}
+
+
+/*  SEGUNDA PÁGINA PROGRAMACIÓN.HTML - ENCABEZADO, CUERPO Y FOOTER */
+
+ /*  <!-- CSS PARA ESTILO DE LA TABLA --> */
+
+.tablaPrograma table {
+  
+    width: 60%; 
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px auto; 
+    font-size: 12px; 
+  }
+  
+  .titulo-tabla {
+    font-family: 'Fjalla One', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 10px auto; 
+    text-align: center;
+  }
+  
+  .tablaPrograma th,
+  .tablaPrograma td {
+    padding: 8px 4px; 
+    text-align: center;
+    border: 2px solid white; 
+  }
+
+  /* Estilos para la cabecera principal */
+  .tablaPrograma .cabeceraTabla {
+    background-color: black; 
+    color: white; 
+  }
+  
+  /* Estilos para la subcabecera */
+  .tablaPrograma .subcabeceraTabla {
+    background-color: var(--pistacho); 
+    text-align: left;
+  }
+
+  .subcabeceraTabla th {
+    text-align: left;
+  }
+  
+/* Estilos para las filas pares */
+ tr:nth-child(even) {
+    background-color: var(--verde); 
+    
+  }
+  
+  /* Estilos para las filas impares */
+   tr:nth-child(odd) {
+    background-color: var(--blanco); 
+    
+  }
+  .tablaPrograma .fechaEspecial {
+    background-color: white; 
+}
+
+  /* Estilos para el enlace de inscripción */
+  .tablaPrograma p a {
+    color: blue;
+    text-decoration: underline;
+  }
+  
+  .tablaPrograma p a:hover {
+    color: darkblue;
+  }
+
+/* Estilos para las celdas de la tabla */
+.tablaPrograma td {
+    position: relative; 
+  }
+  
+  
+  .tablaPrograma tr:hover td {
+    border-bottom: 2px solid transparent;
+  }
+  
+  
+  .tablaPrograma tr:hover td::after {
+    content: '';
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: black; 
+  }
+  
+  .enlace-programa {
+    font-size: 14px; 
+    margin-top: 10px;
+    margin: 10px auto; 
+    text-align: center;
+    color: rgb(0, 0, 0);
+  }
+  
+  .inscripción-enlace {
+    text-decoration: underline;
+    text-decoration: none;
+    font-size: smaller;
+    font-size: 14px;
+    font-weight: initial;
+  }
+  
+/* CSS PARA EL CONTENIDO DEL PROGRAMA DE AMBOS DIAS */
+
+.Apartado-Programa {
+  float: none;
+  background-color: var(--verde);
+}
+
+.Titulo-Programa {
+  float: none;
+  padding-left: 3%;
+  font-size: 30px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 3%;
+}
+
+.Contenedor-Cubos {
+  display: flex;
+  justify-content: space-between; 
+  position: relative;
+  top: 40px; 
+}
+
+.Contenedor-Dias1,
+.Contenedor-Dias2 {
+  flex-basis: calc(50% - 30px); 
+  max-width: calc(50% - 30px); 
+  padding-bottom: 80px; 
+  font-family: 'Times New Roman', Times, serif;
+  padding-left: 100px; 
+  box-sizing: border-box; 
+}
+
+.Contenedor-Dias1 h3, .Contenedor-Dias2 h3 {
+  font-size: 20px; 
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  
+}
+
+.horas{
+  padding: 15px 0px;
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.hora{  
+  padding: 10px 0px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.horas .numeros {
+  list-style-type: decimal;
+  margin-left: 40px; 
+}
+
+.Contenedor-Dias1 h3 {
+  display: inline;
+  position: relative;
+}
+
+.Contenedor-Dias1 h3 span, .Contenedor-Dias2 h3 span {
+  background-color: palegreen;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone; 
+}
+
+
+
+/*  TERCERA PÁGINA INSCRIPCIÓN.HTML - ENCABEZADO, CUERPO Y FOOTER */
+
+
+.inscripcion{
+    padding: 20px 0px;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 20px;
+
+}
+.inscripcion h2{
+    text-align: center;
+    padding: 20px 0px;
+}
+.inscripcion label{
+    font-size: 12px;
+}
+fieldset{
+    background-color:var(--verde);
+    margin-bottom: 30px;
+    padding: 20px;
+}
+div fieldset{
+    width: 750px;
+    height: 100px;
+}
+legend{
+    color: black;
+    background-color: var(--pistacho);
+    border: black;
+    
+}
+
+.ins-taller{
+    list-style: none;
+    display: inline-flex;
+}
+.ins-taller li{
+    width: 250px;
+    padding: 10px 0px;
+}
+.ins-taller ol{
+    list-style: none;
+}
+.ins-taller ol > li{
+    padding: 10px 0px;
+    padding-right: 20px;
+}
+.ins-taller h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    border-bottom:none;
+}
+input{
+    margin: 10px 0;
+}
+form{
+    margin: auto;
+    width: 850px;
+    font-family: 'Open Sans', sans-serif;
+}
+form > div{
+    display: flex;
+    justify-content: center;
+}
+.asistencia{
+    list-style: none;
+    display: inline-flex;
+}
+.asistencia li{
+    width: 250px;
+    padding-right: 20px;
+}
+
+fieldset {
+  margin-bottom: 10px;
+}
+
+button {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  width: 100px;
+  height: 50px;
+  font-size: 12px;
+  background-color: var(--pistacho);
+  color: black;
+}
+
+button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+input:invalid,
+textarea:invalid {
+    box-shadow: 0 0 5px 2px rgba(249, 35, 35, 0.5); 
+}
+
+input:valid,
+textarea:valid {
+    box-shadow: 0 0 5px 2px rgb(207, 255, 134); 
+}
+
